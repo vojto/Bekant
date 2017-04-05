@@ -26,7 +26,6 @@
     
     devs = hid_enumerate(0x0, 0x0);
 
-    /*
     cur_dev = devs;
     while (cur_dev) {
         printf("wtf");
@@ -39,7 +38,6 @@
         cur_dev = cur_dev->next;
     }
     hid_free_enumeration(devs);
-     */
 
     handle = hid_open(0x16c0, 0x05df, NULL);
 }

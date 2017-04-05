@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -670,14 +670,16 @@
         <window title="Bekant" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <rect key="contentRect" x="335" y="390" width="172" height="89"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="172" height="89"/>
+            <value key="maxSize" type="size" width="172" height="89"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="172" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YeG-Jb-io2">
-                        <rect key="frame" x="14" y="312" width="63" height="32"/>
+                    <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YeG-Jb-io2">
+                        <rect key="frame" x="14" y="41" width="63" height="32"/>
                         <buttonCell key="cell" type="push" title="Up" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3c0-x7-3JX">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -686,8 +688,8 @@
                             <action selector="shortUp:" target="Voe-Tx-rLC" id="bdG-ze-g2p"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9q-IN-n1F">
-                        <rect key="frame" x="72" y="312" width="86" height="32"/>
+                    <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9q-IN-n1F">
+                        <rect key="frame" x="72" y="41" width="86" height="32"/>
                         <buttonCell key="cell" type="push" title="Down" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ek7-cD-5Qj">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -696,8 +698,8 @@
                             <action selector="shortDown:" target="Voe-Tx-rLC" id="Jgp-mc-Xgm"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rs6-cT-2sY">
-                        <rect key="frame" x="14" y="284" width="63" height="32"/>
+                    <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rs6-cT-2sY">
+                        <rect key="frame" x="14" y="13" width="63" height="32"/>
                         <buttonCell key="cell" type="push" title="Top" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="W6f-5F-3tl">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -706,8 +708,8 @@
                             <action selector="top:" target="Voe-Tx-rLC" id="Xes-4u-AHl"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-dN-Drn">
-                        <rect key="frame" x="72" y="284" width="86" height="32"/>
+                    <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-dN-Drn">
+                        <rect key="frame" x="72" y="13" width="86" height="32"/>
                         <buttonCell key="cell" type="push" title="Bottom" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dsf-1u-Zgf">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -716,15 +718,24 @@
                             <action selector="bottom:" target="Voe-Tx-rLC" id="gyA-O3-lEb"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F5O-4Z-fU6">
-                        <rect key="frame" x="120" y="205" width="61" height="36"/>
-                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nYq-K1-4An">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system" size="10"/>
-                        </buttonCell>
-                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JDW-dN-Drn" secondAttribute="trailing" constant="20" id="2i0-8c-KUD"/>
+                    <constraint firstItem="Rs6-cT-2sY" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="4nI-5Z-f6h"/>
+                    <constraint firstItem="JDW-dN-Drn" firstAttribute="top" secondItem="P9q-IN-n1F" secondAttribute="bottom" constant="7" id="Brm-tL-n6R"/>
+                    <constraint firstItem="P9q-IN-n1F" firstAttribute="leading" secondItem="YeG-Jb-io2" secondAttribute="trailing" constant="7" id="Dau-Hw-b8k"/>
+                    <constraint firstAttribute="bottom" secondItem="JDW-dN-Drn" secondAttribute="bottom" constant="20" id="Dvv-zG-4n8"/>
+                    <constraint firstItem="Rs6-cT-2sY" firstAttribute="top" secondItem="YeG-Jb-io2" secondAttribute="bottom" constant="7" id="EHX-nn-rPd"/>
+                    <constraint firstAttribute="bottom" secondItem="Rs6-cT-2sY" secondAttribute="bottom" constant="20" id="Kxe-G1-nH6"/>
+                    <constraint firstItem="JDW-dN-Drn" firstAttribute="leading" secondItem="Rs6-cT-2sY" secondAttribute="trailing" constant="7" id="XL9-tK-agr"/>
+                    <constraint firstAttribute="trailing" secondItem="P9q-IN-n1F" secondAttribute="trailing" constant="20" id="aC5-ko-YbB"/>
+                    <constraint firstItem="YeG-Jb-io2" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="b7t-WK-11d"/>
+                    <constraint firstItem="P9q-IN-n1F" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="mNz-jU-QGX"/>
+                    <constraint firstItem="YeG-Jb-io2" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="sxT-gm-xwW"/>
+                    <constraint firstItem="JDW-dN-Drn" firstAttribute="leading" secondItem="Rs6-cT-2sY" secondAttribute="trailing" constant="7" id="vx5-ey-3ik"/>
+                </constraints>
             </view>
+            <point key="canvasLocation" x="347" y="216.5"/>
         </window>
     </objects>
 </document>

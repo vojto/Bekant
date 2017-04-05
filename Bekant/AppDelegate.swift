@@ -28,7 +28,7 @@ if([event modifierFlags] == 1835305 && [[event charactersIgnoringModifiers] comp
 
 [NSApp activateIgnoringOtherApps:YES];
 }
-}];
+}];w
 */
         print("Setting up the event trap");
         
@@ -96,7 +96,7 @@ if([event modifierFlags] == 1835305 && [[event charactersIgnoringModifiers] comp
         
         NSTimer.scheduledTimerWithTimeInterval(duration, target: NSBlockOperation(block: { () -> Void in
             self.hid!.close(index)
-        }), selector: "main", userInfo: nil, repeats: false)
+        }), selector: #selector(NSOperation.main), userInfo: nil, repeats: false)
 
         
     }
